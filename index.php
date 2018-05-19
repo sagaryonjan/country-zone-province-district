@@ -24,6 +24,12 @@ $districts_as_province = $country->name('nepal')
                     ->whereProvince('Province No. 1')
                     ->getDistricts();
 
+
+$get_province_name_from_district = $country->name('nepal')->getProvinceNameFromDistrict('Baglung');
+$get_country_name_from_province = $country->getCountryNameFromProvince('Province No. 1');
+
+print_r($get_country_name_from_province);
+die;
 echo '<pre>';
 print_r($zones);
 print_r($countries);
